@@ -57,7 +57,7 @@ To give a visual sense of what a system & network engineer does when containeris
    ping -c 3 app
    curl http://app:5000
    ```
-   Because the containers share the same network, service discovery works out of the box【588612204273761†L123-L140】.
+   Because the containers share the same network, service discovery works out of the box.
 
 5. **Stop the lab** when finished:
    ```bash
@@ -68,11 +68,11 @@ To give a visual sense of what a system & network engineer does when containeris
 
 Docker brings several benefits that appeal to system and network engineers:
 
-- **Environment consistency** – Containers encapsulate the application, its libraries and dependencies so that it runs the same way on every host【328800923888573†L213-L221】.  This reduces the “works on my machine” problem and makes collaboration smoother.
-- **Faster deployment and scaling** – Containers are lightweight and can be started or stopped quickly.  Packaging applications in containers allows you to spin resources up or down without the overhead of a full OS, which leads to faster deployments and fewer outages【345673926201081†L285-L294】.
-- **Service isolation** – Each container runs in its own isolated environment.  If one service crashes or is compromised, it doesn’t take down the others.  Isolation also makes it easier to roll out updates without disrupting the rest of the system【345673926201081†L285-L294】.
+- **Environment consistency** – Containers encapsulate the application, its libraries and dependencies so that it runs the same way on every host.  This reduces the “works on my machine” problem and makes collaboration smoother.
+- **Faster deployment and scaling** – Containers are lightweight and can be started or stopped quickly.  Packaging applications in containers allows you to spin resources up or down without the overhead of a full OS, which leads to faster deployments and fewer outages.
+- **Service isolation** – Each container runs in its own isolated environment.  If one service crashes or is compromised, it doesn’t take down the others.  Isolation also makes it easier to roll out updates without disrupting the rest of the system
 - **Portability and platform independence** – Containers can run on any host with Docker installed, whether that’s your laptop, a staging server or a production cluster.  This portability makes migrations and multi‑cloud strategies easier.
-- **Built‑in service discovery** – Docker’s networking drivers provide DNS‑based service discovery within a network.  Containers on the same network can reach each other by name without manual IP configuration【588612204273761†L123-L140】.
+- **Built‑in service discovery** – Docker’s networking drivers provide DNS‑based service discovery within a network.  Containers on the same network can reach each other by name without manual IP configuration.
 
 By combining these benefits, engineers can automate infrastructure, shorten feedback loops and build more robust systems.
 
@@ -82,7 +82,7 @@ This lab is intentionally simple.  You can extend it by:
 
 * Adding authentication and metrics to the Flask dashboard.
 * Integrating [Traefik](https://traefik.io/) or another reverse proxy with SSL termination.
-* Switching the network driver to `overlay` and deploying the stack across multiple hosts using Docker Swarm.  The overlay driver provides multi‑host connectivity and DNS-based service discovery across a cluster【588612204273761†L164-L186】.
+* Switching the network driver to `overlay` and deploying the stack across multiple hosts using Docker Swarm.  The overlay driver provides multi‑host connectivity and DNS-based service discovery across a cluster.
 * Introducing a database container (such as PostgreSQL) and testing persistent volumes.
 
 Feel free to fork the repository and make it your own.
@@ -91,6 +91,6 @@ Feel free to fork the repository and make it your own.
 
 ### Footnotes
 
-1. Docker’s bridge network driver creates a private network for containers on the same host and provides service discovery【588612204273761†L123-L140】【588612204273761†L153-L156】.
-2. Docker containers encapsulate code, libraries and dependencies so applications run consistently across different environments【328800923888573†L213-L221】.
-3. Containers enable faster deployments and isolated updates because they are lightweight and self‑contained【345673926201081†L285-L294】.
+1. Docker’s bridge network driver creates a private network for containers on the same host and provides service discovery
+2. Docker containers encapsulate code, libraries and dependencies so applications run consistently across different environments
+3. Containers enable faster deployments and isolated updates because they are lightweight and self‑contained.
