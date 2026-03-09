@@ -12,7 +12,7 @@ The repository contains three cooperating services defined in a [`docker-compose
 | **Flask dashboard** | A minimal Python web application.  The code lives in the [`app/`](./app/) directory.  This container mounts a persistent volume so that state can survive container restarts. |
 | **Netshoot toolbox** | A container based on the [netshoot image](https://github.com/nicolaka/netshoot) loaded with tools like `ping`, `curl` and `tcpdump`.  It helps engineers debug network connectivity within the Docker network. |
 
-The services share a custom Docker network (`ops_net`), which allows them to resolve each other by service name.  Docker automatically creates the necessary Linux bridges, sets up IP addresses and provides service discovery when containers join the same network【588612204273761†L123-L140】【588612204273761†L153-L156】.
+The services share a custom Docker network (`ops_net`), which allows them to resolve each other by service name.  Docker automatically creates the necessary Linux bridges, sets up IP addresses and provides service discovery when containers join the same network.
 
 ## Architecture diagram
 
@@ -30,7 +30,7 @@ flowchart LR
 
 To give a visual sense of what a system & network engineer does when containerising services, the repository includes a conceptual illustration of an engineer working with Docker containers:
 
-![System & network engineer working with Docker](/home/oai/share/docker-network-lab/images/system-engineer-docker.png)
+![System & network engineer working with Docker](system-engineer-docker.png)
 
 ## Running the lab
 
