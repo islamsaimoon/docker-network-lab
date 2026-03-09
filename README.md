@@ -1,10 +1,10 @@
 # Docker Network Operations Lab
 
-This project demonstrates how system and network engineers can build a simple yet realistic **Docker‑based lab**.  The lab deploys a small web application behind a reverse proxy and includes a toolbox container for network troubleshooting.  By containerising the services you get **consistent environments** across development, testing and production, and you can spin up or tear down infrastructure quickly【328800923888573†L213-L221】【345673926201081†L285-L294】.
+This project demonstrates how system and network engineers can build a simple yet realistic **Docker‑based lab**.  The lab deploys a small web application behind a reverse proxy and includes a toolbox container for network troubleshooting.  By containerising the services you get **consistent environments** across development, testing and production, and you can spin up or tear down infrastructure quickly
 
 ## Overview
 
-The repository contains three cooperating services defined in a [`docker-compose.yml`](./docker-compose.yml) file:
+The repository contains three cooperating services defined in a [`docker-compose.yml`](docker-compose.yml) file:
 
 | Service         | Role in the lab                       |
 |---------------|---------------------------------------|
